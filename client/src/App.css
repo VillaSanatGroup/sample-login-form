@@ -1,0 +1,138 @@
+@font-face {
+    font-family: Vazir;
+    src: url("./assets/font/Vazir.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Vazir;
+}
+
+body {
+    color: white;
+    background-color: #222831;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .wrapper {
+    width: min(90%, 450px);
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    background-color: #393E46;
+}
+
+.container .wrapper img {
+    width: 70%;
+}
+
+.container .wrapper h1 {
+    font-size: 1.7rem;
+}
+
+.container .wrapper form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+
+.container form .field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem;
+}
+
+.container .field input {
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.container .field i {
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    font-size: 1.3rem;
+    color: #393E46;
+    background-color: white;
+}
+
+.container .field .error {
+    height: 1rem;
+    margin-right: 5px;
+    font-size: 0.7rem;
+    color: red;
+}
+
+.container form button {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #00ADB5;
+}
+
+.container form .disable-btn {
+    opacity: 0.5;
+}
+
+.container .wrapper p {
+    font-size: 0.9rem;
+}
+
+.container p a {
+    color: #00ADB5;
+}
+
+.container .welcome-message {
+    font-size: 1.5rem;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (min-width: 576px) {
+    html {
+        font-size: 16.5px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    html {
+        font-size: 17.5px;
+    }
+    .container .field .fa-eye,
+    .container .field .fa-eye-slash,
+    .container form button {
+        cursor: pointer;
+    }
+    .container form .disable-btn {
+        cursor: default;
+    }
+}
