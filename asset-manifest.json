@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sample-login-form/static/css/main.b8549a00.css",
+    "main.js": "/sample-login-form/static/js/main.92be12be.js",
+    "static/media/Vazir.ttf": "/sample-login-form/static/media/Vazir.8698ab7164cb8aa9f35b.ttf",
+    "static/media/logo.png": "/sample-login-form/static/media/logo.67cbf41b3edbbc8b0ede.png",
+    "index.html": "/sample-login-form/index.html",
+    "main.b8549a00.css.map": "/sample-login-form/static/css/main.b8549a00.css.map",
+    "main.92be12be.js.map": "/sample-login-form/static/js/main.92be12be.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8549a00.css",
+    "static/js/main.92be12be.js"
+  ]
+}
