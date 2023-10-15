@@ -1,8 +1,9 @@
-import React, { useState, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { useForm } from "react-hook-form";
-import logo from "../assets/img/logo.png";
 
+import Field from "./Field";
+import React from "react";
+import logo from "../assets/img/logo.png";
+import { useForm } from "react-hook-form";
 
 const fieldsInfo = [
     {
@@ -32,9 +33,8 @@ const fieldsInfo = [
 ];
 
 const Register = () => {
-
     const navigate = useNavigate();
-    const {register, handleSubmit, formState: {errors}} = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmit = () => {
         navigate("/welcome");
@@ -46,16 +46,14 @@ const Register = () => {
                 <img src={logo} alt="logo" />
                 <h1>عضویت</h1>
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    {
-                        fieldsInfo.map(fieldInfo =>
-                            <Field
-                                key={fieldInfo.id}
-                                fieldInfo={fieldInfo}
-                                register={register}
-                                errors={errors}
-                            />
-                        )
-                    }
+                    {fieldsInfo.map(fieldInfo =>
+                        <Field
+                            key={fieldInfo.id}
+                            fieldInfo={fieldInfo}
+                            register={register}
+                            errors={errors}
+                        />
+                    )}
                     <button
                         className={Object.keys(errors).length && "disable-btn"}
                         type="submit">
@@ -70,50 +68,5 @@ const Register = () => {
         </div>
     );
 };
-
-
-const Field = ({fieldInfo, register, errors}) => {
-
-    const {name, pattern, placeholder, iconClassName, error} = fieldInfo;
-    const [showPassword, setShowPassword] = useState(false);
-    const iconRef = useRef();
-
-    const togglePasswordVisibility = () => {
-        if (iconRef.current.className === "fa-solid fa-eye") {
-            setShowPassword(true);
-        } else if (iconRef.current.className === "fa-solid fa-eye-slash") {
-            setShowPassword(false);
-        }
-    };
-
-    return (
-        <div className="field">
-            <input
-                type={
-                    iconClassName === "fa-solid fa-eye" ?
-                    showPassword ? "text" : "password" :
-                    "text"
-                }
-                {...register(name, {
-                    required: true,
-                    pattern: new RegExp(pattern)
-                })}
-                placeholder={placeholder}
-            />
-            {
-                showPassword ?
-                <i ref={iconRef} className={iconClassName + "-slash"} onClick={togglePasswordVisibility}></i> :
-                <i ref={iconRef} className={iconClassName} onClick={togglePasswordVisibility}></i>
-            }
-            <span className="error">
-                {
-                    (errors[name]?.type === "required" && `${placeholder} نمی‌تواند خالی باشد!`) ||
-                    (errors[name] && error)
-                }
-            </span>
-        </div>
-    );
-};
-
 
 export default Register;
