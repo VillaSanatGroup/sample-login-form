@@ -1,0 +1,12 @@
+D:\Amirhossein\repos\repos\Excersises\SampleLoginForm\Server\SampleLoginForm\DataLayer\bin\Debug\net7.0\DataLayer.deps.json
+D:\Amirhossein\repos\repos\Excersises\SampleLoginForm\Server\SampleLoginForm\DataLayer\bin\Debug\net7.0\DataLayer.dll
+D:\Amirhossein\repos\repos\Excersises\SampleLoginForm\Server\SampleLoginForm\DataLayer\bin\Debug\net7.0\DataLayer.pdb
+D:\Amirhossein\repos\repos\Excersises\SampleLoginForm\Server\SampleLoginForm\DataLayer\obj\Debug\net7.0\DataLayer.csproj.AssemblyReference.cache
+D:\Amirhossein\repos\repos\Excersises\SampleLoginForm\Server\SampleLoginForm\DataLayer\obj\Debug\net7.0\DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Amirhossein\repos\repos\Excersises\SampleLoginForm\Server\SampleLoginForm\DataLayer\obj\Debug\net7.0\DataLayer.AssemblyInfoInputs.cache
+D:\Amirhossein\repos\repos\Excersises\SampleLoginForm\Server\SampleLoginForm\DataLayer\obj\Debug\net7.0\DataLayer.AssemblyInfo.cs
+D:\Amirhossein\repos\repos\Excersises\SampleLoginForm\Server\SampleLoginForm\DataLayer\obj\Debug\net7.0\DataLayer.csproj.CoreCompileInputs.cache
+D:\Amirhossein\repos\repos\Excersises\SampleLoginForm\Server\SampleLoginForm\DataLayer\obj\Debug\net7.0\DataLayer.dll
+D:\Amirhossein\repos\repos\Excersises\SampleLoginForm\Server\SampleLoginForm\DataLayer\obj\Debug\net7.0\refint\DataLayer.dll
+D:\Amirhossein\repos\repos\Excersises\SampleLoginForm\Server\SampleLoginForm\DataLayer\obj\Debug\net7.0\DataLayer.pdb
+D:\Amirhossein\repos\repos\Excersises\SampleLoginForm\Server\SampleLoginForm\DataLayer\obj\Debug\net7.0\ref\DataLayer.dll
